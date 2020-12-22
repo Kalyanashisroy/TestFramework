@@ -25,7 +25,7 @@ public class ExcelReadData {
 	Row row;
 	Cell cell;
 
-	public String ChoiceBrowser(String FilePath,String sheetname) throws IOException {
+	public String ChoiceOfBrowser(String FilePath,String sheetname) throws IOException {
 		InputStream ExcelFileToRead=new FileInputStream(FilePath);
 		XSSFWorkbook wb=new XSSFWorkbook(ExcelFileToRead);
 		XSSFSheet sheet=wb.getSheet(sheetname);
